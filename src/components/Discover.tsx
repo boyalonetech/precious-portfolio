@@ -229,10 +229,12 @@ const Discover = () => {
   ];
 
   return (
-    <div className="bg-[#001617] py-10">
+    <div className="bg-[#001617] py-10" id="skills">
       {/* Header */}
       <div className="text-center flex flex-col gap-3 mb-10">
-        <h1 className="text-2xl lg:text-4xl font-bold text-white">How I Deliver Impact</h1>
+        <h1 className="text-2xl lg:text-4xl font-bold text-white">
+          How I Deliver Impact
+        </h1>
         <p className="text-gray-600 font-medium text-xl max-w-2xl mx-auto">
           Key data analysis skills that enable me to deliver actionable
           insights, and communicate effectively in data-driven environments.

@@ -60,7 +60,7 @@ const Card = () => {
   ];
 
   return (
-    <div className="px-4 py-8 bg-[#004246] min-h-screen">
+    <div className="px-4 py-8 bg-[#004246] min-h-screen" id="projects">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-3xl font-bold mb-6 text-center text-white">
           My Projects

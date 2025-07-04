@@ -39,7 +39,7 @@ const Hero = () => {
               Contact
             </button>
             {/* Socials */}
-            <div className="flex justify-around items-center mr-4 gap-4 scale-[1.1] lg:gap-10">
+            <div className="flex justify-around items-center lg:mr-4 gap-4 mr-0 sm:scale-[1.1] lg:gap-10">
               <Link className="hover:text-[#01DBEA]" href="/">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

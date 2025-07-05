@@ -255,7 +255,6 @@ const Discover = () => {
           </div>
         ))}
       </div>
-      _
     </div>
   );
 };

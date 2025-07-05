@@ -8,3 +8,7 @@
 html {
   scroll-behavior: smooth;
 }
+
+.transit {
+  transition: 0.3s ease-in-out;
+}

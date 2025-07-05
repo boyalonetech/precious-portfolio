@@ -1,45 +1,69 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
-const Hero = () => {
+export default function ContactSection() {
   return (
-    <section className="flex flex-col lg:flex-row justify-evenly item-center mt-0">
-      {/* Image */}
-      <div className="md:flex md:justify-center md:items-center">
-        <Image src="/Frame.png" alt="" width={500} height={500} className="" />
-      </div>
-      {/* TEXT */}
+    <section className="bg-[#012326] text-white py-16 px-4 font-sans">
+      <h2 className="text-center text-2xl font-semibold mb-8">
+        Send me a message
+      </h2>
+      <div className="flex flex-col lg:flex-row justify-center items-start gap-8 max-w-6xl mx-auto">
+        {/* Form */}
+        <form className="bg-[#224a4b] p-6 rounded-2xl w-full lg:w-2/3">
+          <div className="flex flex-col md:flex-row gap-4 mb-4">
+            <input
+              type="text"
+              placeholder="Your Name"
+              className="flex-1 p-3 rounded-xl bg-[#e0f7fa] text-black placeholder-gray-600 focus:outline-none"
+            />
+            <input
+              type="email"
+              placeholder="Enter Your Email"
+              className="flex-1 p-3 rounded-xl bg-[#e0f7fa] text-black placeholder-gray-600 focus:outline-none"
+            />
+          </div>
+          <input
+            type="text"
+            placeholder="Subject"
+            className="w-full mb-4 p-3 rounded-xl bg-[#e0f7fa] text-black placeholder-gray-600 focus:outline-none"
+          />
+          <textarea
+            placeholder="Your Message"
+            className="w-full mb-4 p-3 rounded-xl bg-[#e0f7fa] text-black placeholder-gray-600 h-32 resize-none focus:outline-none"
+          />
+          <button
+            type="submit"
+            className="w-full py-3 bg-gradient-to-r from-cyan-400 to-cyan-600 text-white rounded-xl hover:opacity-90 transition"
+          >
+            Send Message
+          </button>
+        </form>
 
-      <div className="flex flex-col gap-5 max-w-[700px] mx-4 lg:mx-10 my-18">
-        {/*  */}
-        <div className="flex flex-col gap-2">
-          {" "}
-          <p className="font-semibold text-md lg:text-xl text-[#01DBEA]">
-            DATA ANALYST
-          </p>
-          <h1 className="text-3xl lg:text-4xl font-bold text-black">
-            IDOKO CHIDIMMA PORTFOLIO
-          </h1>
-        </div>
-        <div className="md:max-w-[700px]">
-          {" "}
-          <p>
-            Hi, I'm Idoko Precious Chidimma an enthusiastic entry level Data
-            Analyst with a passion for transforming raw data into meaningful,
-            actionable insights. I enjoy working with tools like SQL, Power BI,
-            Tableau, Microsoft Excel, and Python to build clear reports and
-            visual stories that help solve business problems. I'm eager to join
-            a forward-thinking team where I can grow my skills, contribute fresh
-            ideas, and help drive smart, data-informed decisions.
-          </p>
-          {/* Contact */}
-          <div className="flex justify-between items-center pt-10">
-            <button className="p-3 px-5 lg:px-10 bg-[#01DBEA] text-white rounded-2xl hover:cursor-pointer">
-              Contact
-            </button>
-            {/* Socials */}
-            <div className="flex justify-around items-center lg:mr-4 gap-4 mr-0 sm:scale-[1.1] lg:gap-10">
+        {/* Contact Info */}
+        <div className=" p-6 rounded-lg w-full lg:w-1/3">
+          <div className="mb-6 bg-[#226060] rounded-2xl p-6">
+            <h3 className="text-lg font-semibold mb-2">Contact Information</h3>
+            <p className="mb-3">
+              📍 Location
+              <br />
+              Lagos, Nigeria
+            </p>
+            <p>
+              ✉️ Email
+              <br />
+              <a
+                href="mailto:idokochidimma15@gmail.com"
+                className="text-cyan-300 hover:underline"
+              >
+                idokochidimma15@gmail.com
+              </a>
+            </p>
+          </div>
+          <div className=" bg-[#226060] p-6 rounded-2xl">
+            <h3 className="text-lg font-semibold mb-4">Social Media</h3>
+            <div className="flex items-center gap-4">
               <Link className="hover:text-[#01DBEA]" href="/">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -345,8 +369,9 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      <footer className="text-center text-sm text-gray-400 border-t border-gray-700 mt-12 pt-4">
+        © 2025 Idoko Chidimma Precious. All rights reserved.
+      </footer>
     </section>
   );
-};
-
-export default Hero;
+}

@@ -1,43 +1,104 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function ContactSection() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    const fullMessage = `Hello, my name is ${name}%0AEmail: ${email}%0ASubject: ${subject}%0AMessage: ${message}`;
+    const whatsappURL = `https://wa.me/2348161514098?text=${fullMessage}`;
+    window.open(whatsappURL, "_blank");
+  };
   return (
-    <section className="bg-[#012326] text-white py-16 px-4 font-sans">
+    <section
+      className="bg-[#001617] text-white py-16 px-4 font-sans"
+      id="contact"
+    >
+      <div className="text-center flex flex-col gap-3 mb-10">
+        <h1 className="text-2xl lg:text-3xl font-bold text-white">
+          Get in Touch
+        </h1>
+        <p className="text-gray-600 font-medium text-sm lg:text-xl max-w-6xl mx-auto">
+          I welcome opportunities for roles, projects, or collaborations where
+          my data analytics and AI expertise can contribute to meaningful,
+          data-driven outcomes. Please feel free to reach out—I look forward to
+          connecting
+        </p>
+      </div>
       <h2 className="text-center text-2xl font-semibold mb-8">
         Send me a message
       </h2>
       <div className="flex flex-col lg:flex-row justify-center items-start gap-8 max-w-6xl mx-auto">
         {/* Form */}
-        <form className="bg-[#224a4b] p-6 rounded-2xl w-full lg:w-2/3">
+        <form
+          onSubmit={handleSubmit}
+          className="bg-[#224a4b] p-6 rounded-2xl w-full lg:w-2/3"
+        >
           <div className="flex flex-col md:flex-row gap-4 mb-4">
+            <div className="flex flex-col w-full gap-2">
+              <label htmlFor="name" className="text-xl">
+                Name
+              </label>
+              <input
+                type="text"
+                placeholder="Your Name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                className="flex-1 p-3 rounded-xl bg-[#e0f7fa] text-black placeholder-gray-600 focus:outline-none"
+                required
+              />
+            </div>
+            <div className="flex flex-col w-full gap-2">
+              <label htmlFor="email" className="text-xl">
+                Email
+              </label>
+              <input
+                type="email"
+                placeholder="Your Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="flex-1 p-3 rounded-xl bg-[#e0f7fa] text-black placeholder-gray-600 focus:outline-none"
+                required
+              />
+            </div>
+          </div>
+          <div className="flex flex-col gap-3">
+            <label htmlFor="subject" className="text-xl">
+              Subject
+            </label>
             <input
               type="text"
-              placeholder="Your Name"
-              className="flex-1 p-3 rounded-xl bg-[#e0f7fa] text-black placeholder-gray-600 focus:outline-none"
-            />
-            <input
-              type="email"
-              placeholder="Enter Your Email"
-              className="flex-1 p-3 rounded-xl bg-[#e0f7fa] text-black placeholder-gray-600 focus:outline-none"
+              placeholder="Subject"
+              value={subject}
+              onChange={(e) => setSubject(e.target.value)}
+              className="w-full mb-4 p-3 rounded-xl bg-[#e0f7fa] text-black placeholder-gray-600 focus:outline-none"
+              required
             />
           </div>
-          <input
-            type="text"
-            placeholder="Subject"
-            className="w-full mb-4 p-3 rounded-xl bg-[#e0f7fa] text-black placeholder-gray-600 focus:outline-none"
-          />
-          <textarea
-            placeholder="Your Message"
-            className="w-full mb-4 p-3 rounded-xl bg-[#e0f7fa] text-black placeholder-gray-600 h-32 resize-none focus:outline-none"
-          />
+          <div className="flex flex-col gap-3">
+            <label htmlFor="message" className="text-xl">
+              Message
+            </label>
+            <textarea
+              placeholder="Your Message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              className="w-full mb-4 p-3 rounded-xl bg-[#e0f7fa] text-black placeholder-gray-600 h-32 resize-none focus:outline-none"
+              required
+            />
+          </div>
           <button
             type="submit"
             className="w-full py-3 bg-gradient-to-r from-cyan-400 to-cyan-600 text-white rounded-xl hover:opacity-90 transition"
           >
-            Send Message
+            Send
           </button>
         </form>
 
@@ -45,11 +106,26 @@ export default function ContactSection() {
         <div className=" p-6 rounded-lg w-full lg:w-1/3">
           <div className="mb-6 bg-[#226060] rounded-2xl p-6">
             <h3 className="text-lg font-semibold mb-2">Contact Information</h3>
-            <p className="mb-3">
-              📍 Location
-              <br />
+            <div className="mb-3">
+              <p className="flex gap-2">
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width={25}
+                    height={25}
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M19 9A7 7 0 1 0 5 9c0 1.387.409 2.677 1.105 3.765h-.008L12 22l5.903-9.235h-.007A6.97 6.97 0 0 0 19 9m-7 3a3 3 0 1 1 0-6a3 3 0 0 1 0 6"
+                    ></path>
+                  </svg>
+                </span>{" "}
+                Location
+              </p>
+             
               Lagos, Nigeria
-            </p>
+            </div>
             <p>
               ✉️ Email
               <br />

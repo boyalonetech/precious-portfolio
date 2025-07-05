@@ -66,7 +66,7 @@ const Card = () => {
           My Projects
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {projects.map((project: any) => (
+          {projects.map((project) => (
             <div
               key={project.id}
               className="bg-[#2F3333] rounded-lg shadow-md hover:shadow-lg transition duration-300 overflow-hidden flex flex-col"

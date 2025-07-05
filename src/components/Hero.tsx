@@ -25,11 +25,11 @@ const Hero = () => {
         <div className="md:max-w-[700px]">
           {" "}
           <p>
-            Hi, I'm Idoko Precious Chidimma an enthusiastic entry level Data
+            Hi, I `m Idoko Precious Chidimma an enthusiastic entry level Data
             Analyst with a passion for transforming raw data into meaningful,
             actionable insights. I enjoy working with tools like SQL, Power BI,
             Tableau, Microsoft Excel, and Python to build clear reports and
-            visual stories that help solve business problems. I'm eager to join
+            visual stories that help solve business problems. I`m eager to join
             a forward-thinking team where I can grow my skills, contribute fresh
             ideas, and help drive smart, data-informed decisions.
           </p>

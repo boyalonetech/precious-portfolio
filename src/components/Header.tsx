@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Menu from "./Menu";
 
 const Header = () => {
@@ -28,11 +28,11 @@ const Header = () => {
           </Link>
         </nav>
 
-        <div>
+        <Link href="/#contact">
           <button className="p-3 px-6 bg-[#01DBEA] text-white rounded-2xl hidden lg:block">
             Contact
           </button>
-        </div>
+        </Link>
         {/* Hamburger */}
         <button className="block lg:hidden z-50" onClick={() => setMenu(!menu)}>
           <svg
@@ -49,6 +49,7 @@ const Header = () => {
         </button>
       </header>
       <div
+        onClick={() => setMenu(!menu)}
         className={` h-full z-40 transit ease-in-out ${
           menu ? "right-0 block transit" : "-right-[450px] hidden transit"
         } lg:hidden`}

@@ -123,7 +123,6 @@ export default function ContactSection() {
                 </span>{" "}
                 Location
               </p>
-             
               Lagos, Nigeria
             </div>
             <p>
@@ -140,7 +139,7 @@ export default function ContactSection() {
           <div className=" bg-[#226060] p-6 rounded-2xl">
             <h3 className="text-lg font-semibold mb-4">Social Media</h3>
             <div className="flex items-center gap-4">
-              <Link className="hover:text-[#01DBEA]" href="/">
+ <Link className="hover:text-[#01DBEA]" href="https://github.com/IdokoChidimma">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width={25}
@@ -216,7 +215,7 @@ export default function ContactSection() {
                   </rect>
                 </svg>
               </Link>
-              <Link className="hover:text-[#01DBEA]" href="/">
+              <Link className="hover:text-[#01DBEA]" href="https://www.instagram.com/dimma_peee?igsh=MWlvNmU4YTliMXoxaw==">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width={25}
@@ -273,7 +272,7 @@ export default function ContactSection() {
                   </g>
                 </svg>
               </Link>
-              <Link className="hover:text-[#01DBEA]" href="/">
+              <Link className="hover:text-[#01DBEA]" href="https://x.com/Dimma_peee?t=RvuL1nSJKQykA4ipKnjctw&s=09">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width={24}
@@ -310,7 +309,7 @@ export default function ContactSection() {
                   </g>
                 </svg>
               </Link>
-              <Link className="hover:text-[#01DBEA]" href="/">
+              <Link className="hover:text-[#01DBEA]" href="https://www.linkedin.com/in/idoko-chidimma-ba8554357?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width={24}
@@ -380,66 +379,10 @@ export default function ContactSection() {
                   </g>
                 </svg>
               </Link>
-              <Link className="hover:text-[#01DBEA]" href="/">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width={25}
-                  height={25}
-                  viewBox="0 0 24 24"
-                >
-                  <mask id="lineMdYoutubeFilled0">
-                    <g
-                      fill="none"
-                      fillOpacity={0}
-                      stroke="#fff"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                    >
-                      <path
-                        fill="#fff"
-                        strokeDasharray={64}
-                        strokeDashoffset={64}
-                        d="M12 5c9 0 9 0 9 7c0 7 0 7 -9 7c-9 0 -9 0 -9 -7c0 -7 0 -7 9 -7Z"
-                      >
-                        <animate
-                          fill="freeze"
-                          attributeName="fill-opacity"
-                          begin="0.6s"
-                          dur="0.5s"
-                          values="0;1"
-                        ></animate>
-                        <animate
-                          fill="freeze"
-                          attributeName="stroke-dashoffset"
-                          dur="0.6s"
-                          values="64;0"
-                        ></animate>
-                      </path>
-                      <path fill="#000" stroke="none" d="M12 11L12 12L12 13z">
-                        <animate
-                          fill="freeze"
-                          attributeName="d"
-                          begin="1.1s"
-                          dur="0.2s"
-                          values="M12 11L12 12L12 13z;M10 8.5L16 12L10 15.5z"
-                        ></animate>
-                        <set
-                          fill="freeze"
-                          attributeName="fill-opacity"
-                          begin="1.1s"
-                          to={1}
-                        ></set>
-                      </path>
-                    </g>
-                  </mask>
-                  <rect
-                    width={24}
-                    height={24}
-                    fill="currentColor"
-                    mask="url(#lineMdYoutubeFilled0)"
-                  ></rect>
-                </svg>
+              <Link className="hover:text-[#01DBEA]" href="https://medium.com/@idokochidimma15">
+<svg xmlns="http://www.w3.org/2000/svg" width={32} height={32} viewBox="0 0 24 24">
+	<path fill="currentColor" d="M6.783 5a6.783 6.783 0 1 0 0 13.565A6.783 6.783 0 0 0 6.783 5m10.695.522c-1.873 0-3.391 2.803-3.391 6.26c0 .65.053 1.274.152 1.862c.132.784.346 1.502.622 2.121q.207.466.46.849c.335.51.724.904 1.149 1.148c.319.183.657.282 1.008.282s.69-.1 1.009-.282c.425-.244.814-.638 1.149-1.148q.251-.384.46-.849c.276-.618.49-1.337.621-2.12c.1-.589.153-1.214.153-1.862c0-3.458-1.519-6.261-3.392-6.261m5.218.521c-.136 0-.266.09-.388.259q-.123.167-.234.434a4 4 0 0 0-.107.288q-.105.31-.193.7c-.118.52-.214 1.138-.28 1.825a23 23 0 0 0-.103 2.234a25 25 0 0 0 .103 2.234c.066.686.162 1.305.28 1.824q.088.391.193.7q.051.156.107.288q.112.266.234.435c.122.168.253.258.388.258c.72 0 1.304-2.57 1.304-5.74c0-3.169-.584-5.739-1.304-5.739"></path>
+</svg>
               </Link>
             </div>
           </div>

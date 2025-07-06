@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <div className="flex flex-col">
       <header className="flex justify-around items-center py-4 px-1  mx-2 bg-[#d8d8d863] backdrop:blur-[10px] lg:m-10 m-5 rounded-4xl">
-        <h1 className="text-3xl font-bold text-[#01DBEA]">IDOKO CHIDIMA</h1>
+        <h1 className="text-3xl font-bold text-[#01DBEA]">IDOKO CHIDIMMA</h1>
         <nav className="lg:flex justify-between text-black  gap-20 items-center hidden">
           <Link href="/" className="hover:bg-[#01dbea4a] p-3 px-5 rounded-2xl ">
             Home

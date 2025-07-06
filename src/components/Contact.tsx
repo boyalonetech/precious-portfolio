@@ -13,7 +13,7 @@ export default function ContactSection() {
     e.preventDefault();
 
     const fullMessage = `Hello, my name is ${name}%0AEmail: ${email}%0ASubject: ${subject}%0AMessage: ${message}`;
-    const whatsappURL = `https://wa.me/2348161514098?text=${fullMessage}`;
+    const whatsappURL = `https://wa.me/2347055998679?text=${fullMessage}`;
     window.open(whatsappURL, "_blank");
   };
   return (
